@@ -805,7 +805,7 @@ button[type=submit]:hover {
 # About
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 45px 0;
+  padding: 45px 100px;
   background: #344a71;
   /* margin-top: 110px; */
 }
@@ -844,6 +844,7 @@ button[type=submit]:hover {
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
+    padding: 0;
   }
 
   .breadcrumbs ol {
