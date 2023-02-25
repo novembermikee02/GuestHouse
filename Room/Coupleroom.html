@@ -65,28 +65,15 @@
         <ul>
           <li><a class="nav-link scrollto " href="../inner-page.html">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
-          <li><a class="nav-link scrollto" href="#events">Events</a></li>
-          <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Room</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="./Room/Coupleroom.html">Couple Room</a></li>
+              <li><a href="#">Single Room</a></li>
+              <li><a href="#">Deluxe Room</a></li>
+              <li><a href="#">Standard Room</a></li>
             </ul>
           </li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -113,6 +100,58 @@
 
   <!-- --- Main ---- -->
   <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="our-best">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row">
+            <div class="col-lg-8" data-aos="zoom-in" data-aos-delay="100">
+              <div class="about-img">
+                <div id="big-image">
+                    <img src="../assets/img/event-birthday.jpg">
+                    <img src="../assets/img/event-custom.jpg">
+                    <img src="../assets/img/event-private.jpg">
+                    <img src="../assets/img/events-bg.jpg">
+                </div>
+              </div>
+              <div class="small-images">
+                <img src="../assets/img/event-birthday.jpg">
+                <img src="../assets/img/event-custom.jpg">
+                <img src="../assets/img/event-private.jpg">
+                <img src="../assets/img/events-bg.jpg">
+            </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="cr-card">
+                    <div class="cr-text">
+                        <h1>Couple Room</h1>
+                        <p>Start from <span>₹150</span>/night</p>
+                        <h2>YOUR RESERVATION</h2>
+                    </div>
+                    <form class="check-Availabilty-from">
+                        <div class="form-group">
+                            <label for="">Check In</label>
+                          <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Check Out</label>
+                          <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mobile Number</label>
+                          <input type="number" class="form-control" placeholder="Enter Your Mobile Number">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                        <button type="submit" class="btn btn-primary form-control">Check Availabilty</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End About Section -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -210,6 +249,14 @@
       });
 
 
+    });
+
+    $(function(){
+        $("#big-image img:eq(0)").nextAll().hide();
+        $(".small-images img").click(function(e){
+            var index = $(this).index();
+            $("#big-image img").eq(index).show().siblings().hide();
+        });
     });
   </script>
 
