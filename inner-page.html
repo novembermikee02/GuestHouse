@@ -74,7 +74,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -109,26 +109,30 @@
   <section class="breadcrumbs">
     <div class="container-fluid">
       <div class="row book-row">
-        <div class="col">
+        <div class="col d-flex align-items-center">
+          <i class="bi bi-check-circle check-Availabilty-circle"></i>
           <h2>CHECK AVAILABILITY</h2>
         </div>
         <div class="col">
-          <label>From</label> <input type="text" class="form-control date">
+          <!-- <label>From</label>  -->
+          <input type="text" class="form-control date">
         </div>
         <div class="col">
-          <label>To</label> <input type="text" class="form-control date">
+          <!-- <label>To</label>  -->
+          <input type="text" class="form-control date">
         </div>
         <div class="col">
-          <label>Mobile Number</label> <input type="text" placeholder="Mobile Number" class="form-control">
+          <!-- <label>Mobile Number</label>  -->
+          <input type="text" placeholder="Mobile Number" class="form-control mobileNo">
         </div>
         <div class="col">
-          <label>Number of people</label>
+          <!-- <label>Number of people</label> -->
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            <button class="form-control dropdown-toggle no-of-people" type="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Select No. of People
             </button>
-            <ul class="dropdown-menu dropdown-menu-dark">
+            <ul class="dropdown-menu dropdown-menu-dark form-control">
               <li><a class="dropdown-item" href="#">1 People</a></li>
               <li><a class="dropdown-item" href="#">2 People</a></li>
               <li><a class="dropdown-item" href="#">3 People</a></li>
@@ -137,8 +141,8 @@
           </div>
         </div>
         <div class="col">
-          <label></label>
-          <div class="text-center"><button type="submit">Check Availabilty</button></div>
+          <!-- <label></label> -->
+          <div class="text-center"><button type="submit" class="btncheckA">Check Availabilty</button></div>
         </div>
 
       </div>
@@ -229,7 +233,7 @@
         <div class="row">
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 " data-aos="zoom-in" data-aos-delay="100">
             <div class="about-img">
-              <img src="assets/img/about.jpg" alt="">
+              <img src="assets/img/hotel/about.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 content">
@@ -277,19 +281,19 @@
               voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
               proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
-            <div class="our-best-list row">
+            <div class="our-best-list row mt-4">
               <div class="col">
                 <ul>
-                  <li><i></i><a href="">item 1</a></li>
-                  <li><i></i><a href="">item 1</a></li>
-                  <li><i></i><a href="">item 1</a></li>
+                  <li><i class='bx bxs-coffee'></i><a href="">Coffee maker</a></li>
+                  <li><i class='bx bx-cable-car'></i><a href="">Cable/satellite TV channels</a></li>
+                  <li><i class='bx bx-phone-call'></i><a href="">Oversized work desk</a></li>
                 </ul>
               </div>
               <div class="col">
                 <ul>
-                  <li><i></i><a href="">item 1</a></li>
-                  <li><i></i><a href="">item 1</a></li>
-                  <li><i></i><a href="">item 1</a></li>
+                  <li><i class='bx bx-play-circle'></i><a href="">25 inch or larger TV</a></li>
+                  <li><i class='bx bx-radio'></i><a href="">AM/FM clock radio</a></li>
+                  <li><i class='bx bx-time-five'></i><a href="">24-hour Concierge service</a></li>
                 </ul>
               </div>
 
@@ -301,119 +305,171 @@
     </section><!-- End About Section -->
 
     <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
+    <section id="testimonial" class="testimonial">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Events</h2>
-          <p>Organize Your Events in our Restaurant</p>
+          <h2>Testimonials</h2>
+          <p>What they're saying about us</p>
         </div>
 
         <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+              <div class="row event-item mt-5">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2">
+                  <div class="testimonial-image">
+                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid" alt="">
+                  </div>
+
                 </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <div class="col-lg-8 pt-4 pt-lg-0 content testimonial-text">
+                  <p class=" fst-italic">
+                    " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore
+                    magna aliqua. "
+                  </p>
                   <h3>Birthday Parties</h3>
-                  <div class="price">
-                    <p><span>$189</span></p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="row event-item mt-5">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2">
+                  <div class="testimonial-image">
+                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid" alt="">
                   </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content testimonial-text">
+                  <p class=" fst-italic">
+                    " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
                     et dolore
-                    magna aliqua.
+                    magna aliqua. "
                   </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
-                    </li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
+                  <h3>Birthday Parties</h3>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="row event-item mt-5">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2">
+                  <div class="testimonial-image">
+                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid" alt="">
+                  </div>
+
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content testimonial-text">
+                  <p class=" fst-italic">
+                    " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore
+                    magna aliqua. "
                   </p>
+                  <h3>Birthday Parties</h3>
                 </div>
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Private Parties</h3>
-                  <div class="price">
-                    <p><span>$290</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
-                    </li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Custom Parties</h3>
-                  <div class="price">
-                    <p><span>$99</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
-                    </li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
 
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination mt-4"></div>
         </div>
 
       </div>
     </section><!-- End Events Section -->
+
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title mb-4">
+          <h3>Gallery</h3>
+          <p>Some photos from Our Restaurant</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+
     <!-- <section class="inner-page">
       <div class="container">
         <p>

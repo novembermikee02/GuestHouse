@@ -750,11 +750,43 @@ section {
   }
 }
 
+.check-Availabilty-circle {
+
+  margin-top: -30px;
+  color: #e7c130;
+  font-size: 48px;
+  margin-right: 15px;
+}
+
 .date[readonly] {
-  background-color: #f44336;
+  /* background-color: #f44336;
   opacity: 1;
   color: #fff;
-  border: 1px solid #f44336
+  border: 1px solid #f44336; */
+
+  /* border-color: #fff; */
+  color: #fff;
+  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: transparent;
+  background-image: none;
+  /* border-width: 2px; */
+  height: 40px;
+}
+
+.mobileNo {
+  /* border-color: #fff; */
+  color: #fff !important;
+  background-color: transparent;
+  background-image: none;
+  /* border-width: 2px; */
+  height: 40px;
+}
+
+.mobileNo::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
 }
 
 .pro-button {
@@ -780,12 +812,22 @@ section {
   border-color: #d8271a
 }
 
-label {
+/* label {
   font-weight: 800
-}
+} */
 
-.dropdown {
+/* .dropdown {
   position: absolute;
+} */
+
+.no-of-people {
+  /* border-color: 1px solid #fff; */
+  color: #fff;
+  background-color: transparent;
+  background-image: none;
+  /* border-width: 2px; */
+  height: 40px;
+  text-align: left;
 }
 
 button[type=submit] {
@@ -856,18 +898,32 @@ button[type=submit]:hover {
   }
 }
 
+@media (max-width:1280px) {
+  .breadcrumbs {
+    padding: 0;
+    text-align: center;
+  }
+
+  .btncheckA {
+    /* margin-top: 50px !important; */
+    margin-bottom: 30px !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # room-rates-container
 --------------------------------------------------------------*/
 
 .room-rates-container {
-  background: url("../img/about-bg.jpg") center center;
+  /* background: url("../img/about-bg.jpg") center center; */
+  background-color: #fff;
   background-size: cover;
   position: relative;
-  padding: 80px 0
+  padding: 80px 0;
+  color: #0c0b09;
 }
 
-.room-rates-container:before {
+/* .room-rates-container:before {
   content: "";
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -875,7 +931,7 @@ button[type=submit]:hover {
   top: 0;
   left: 0;
   right: 0;
-}
+} */
 
 .room-rates-content {
   padding-top: 200px;
@@ -966,9 +1022,9 @@ button[type=submit]:hover {
 # About
 --------------------------------------------------------------*/
 .about {
-  /* background: url("../img/about-bg.jpg") center center; */
-  /* background-size: cover; */
-  background-color: #ffffff;
+  background: url("../img/about-bg.jpg") center center;
+  background-size: cover;
+  /* background-color: #ffffff; */
   position: relative;
   padding: 80px 0;
 }
@@ -1093,7 +1149,9 @@ button[type=submit]:hover {
 }
 
 .our-best .about-img img {
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: 100%;
+  height: 350px;
   border: 4px solid rgba(255, 255, 255, 0.2);
   position: relative;
 }
@@ -1162,9 +1220,17 @@ button[type=submit]:hover {
 }
 
 .our-best .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: black;
+  padding: 0;
+  border: 2px solid #000;
+  width: 52px;
+  height: 52px;
+  margin-right: 15px;
+  display: inline-block;
+  text-align: center;
+  line-height: 52px;
+  vertical-align: middle;
+  color: #444;
+  font-size: 24px;
 }
 
 .our-best .content p:last-child {
@@ -1580,8 +1646,83 @@ button[type=submit]:hover {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
+# new Testimonials
 --------------------------------------------------------------*/
+
+.testimonial-image img {
+  overflow: hidden;
+  width: 125px;
+  height: 115px;
+  border-radius: 100%;
+}
+
+.testimonial-text {
+  margin-top: 10px;
+  margin-left: -60px;
+}
+
+.testimonial-text h3 {
+  font-size: 18px;
+  color: #cda45e;
+}
+
+.testimonial {
+  background: url(../img/events-bg.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 480px;
+}
+
+.testimonial::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.testimonial .section-title h2 {
+  color: #fff;
+}
+
+.testimonial .container {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .testimonial {
+    background-attachment: fixed;
+  }
+}
+
+.testimonial .events-carousel {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+}
+
+.testimonial .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.testimonial .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.testimonial .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #cda45e;
+}
+
+/*--------------------------------------------------------------
+# old Testimonials
+--------------------------------------------------------------*/
+
+/* 
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -1658,11 +1799,39 @@ button[type=submit]:hover {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #cda45e;
-}
+} */
 
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
+.gallery {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.gallery .section-title {
+  text-align: center;
+}
+
+.gallery .section-title h3 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 3px;
+  margin-top: 0;
+  color: inherit;
+  font-weight: bold;
+  color: #232323;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.gallery .section-title p {
+  color: #232323;
+  font-size: 22px;
+}
+
+
 .gallery .gallery-item {
   overflow: hidden;
   border-right: 3px solid #454035;
@@ -1765,6 +1934,11 @@ button[type=submit]:hover {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background-color: #fff;
+  color: #0c0b09;
+}
+
 .contact .info {
   width: 100%;
 }
@@ -2147,6 +2321,6 @@ button[type=submit]:hover {
   margin-left: 5px;
 }
 
-.check-Availabilty-from .form-group{
+.check-Availabilty-from .form-group {
   padding: 10px 40px;
 }
